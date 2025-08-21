@@ -5,6 +5,9 @@ on:
   release:
     types: [published, created, edited]
 
+env:
+  AWS_REGION: us-east-2
+
 jobs:
   get-last-successful-staging-run-id:
     runs-on: ubuntu-latest
